@@ -1,7 +1,9 @@
-package com.zhiyong.findbooks;
+package com.zhiyong.findbooks.activities;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+import com.zhiyong.findbooks.R;
 
 public class HomeActivity extends AppCompatActivity {
 
