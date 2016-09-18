@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">BookCommunity</string>
     <string name="author">Author</string>
-    <string name="isbn">ISBN</string>
+    <string name="isbn">ISBN (digits only, no dashes or dots)</string>
     <string name="isbn_or_title_author">Enter either 1. ISBN (preferred) or 2. title and author.</string>
     <string name="or">OR</string>
     <string name="scan_barcode">Scan ISBN barcode</string>

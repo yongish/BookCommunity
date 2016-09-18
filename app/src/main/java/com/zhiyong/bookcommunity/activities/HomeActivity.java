@@ -2,14 +2,15 @@ package com.zhiyong.bookcommunity.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.Toast;
 
 import com.zhiyong.bookcommunity.R;
 import com.zhiyong.bookcommunity.adapters.BookArrayAdapter;
+import com.zhiyong.bookcommunity.fragments.AddDialogFragment;
 import com.zhiyong.bookcommunity.models.Book;
 
 import java.util.ArrayList;
@@ -33,9 +34,7 @@ public class HomeActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "CLICKING", Toast.LENGTH_LONG).show();
-
-
+                showAddDialog();
             }
         });
 
@@ -69,5 +68,11 @@ public class HomeActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         rvBooks.setLayoutManager(linearLayoutManager);
 
+    }
+
+    private void showAddDialog() {
+        FragmentManager fm = getSupportFragmentManager();
+        AddDialogFragment addDialogFragment = AddDialogFragment.newInstance("Add a book");
+        addDialogFragment.show(fm, "fragment_add");
     }
 }
