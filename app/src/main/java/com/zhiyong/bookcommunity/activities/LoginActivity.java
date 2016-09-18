@@ -1,9 +1,9 @@
-package com.zhiyong.findbooks.activities;
+package com.zhiyong.bookcommunity.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.zhiyong.findbooks.R;
+import com.zhiyong.bookcommunity.R;
 
 public class LoginActivity extends AppCompatActivity {
 

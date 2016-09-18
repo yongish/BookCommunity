@@ -1,4 +1,4 @@
-package com.zhiyong.findbooks;
+package com.zhiyong.bookcommunity;
 
 import org.junit.Test;
 

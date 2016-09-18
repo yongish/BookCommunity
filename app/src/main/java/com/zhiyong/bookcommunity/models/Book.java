@@ -1,4 +1,4 @@
-package com.zhiyong.findbooks.models;
+package com.zhiyong.bookcommunity.models;
 
 /**
  * Created by zhiyong on 9/12/16.

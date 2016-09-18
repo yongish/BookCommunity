@@ -1,15 +1,15 @@
-package com.zhiyong.findbooks.activities;
+package com.zhiyong.bookcommunity.activities;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import com.zhiyong.findbooks.R;
+import com.zhiyong.bookcommunity.R;
 
-public class ScanActivity extends AppCompatActivity {
+public class SearchActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scan);
+        setContentView(R.layout.activity_search);
     }
 }

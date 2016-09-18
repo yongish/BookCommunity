@@ -1,13 +1,16 @@
-package com.zhiyong.findbooks.activities;
+package com.zhiyong.bookcommunity.activities;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.Toast;
 
-import com.zhiyong.findbooks.R;
-import com.zhiyong.findbooks.adapters.BookArrayAdapter;
-import com.zhiyong.findbooks.models.Book;
+import com.zhiyong.bookcommunity.R;
+import com.zhiyong.bookcommunity.adapters.BookArrayAdapter;
+import com.zhiyong.bookcommunity.models.Book;
 
 import java.util.ArrayList;
 
@@ -17,7 +20,7 @@ public class HomeActivity extends AppCompatActivity {
     private ArrayList<Book> books;
     private BookArrayAdapter bookArrayAdapter;
     private RecyclerView rvBooks;
-
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +28,16 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         setupViews();
+
+        fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "CLICKING", Toast.LENGTH_LONG).show();
+
+
+            }
+        });
 
         books.add(new Book(1234567890, false));
         books.add(new Book(1234567890, false));
@@ -43,9 +56,6 @@ public class HomeActivity extends AppCompatActivity {
         books.add(new Book(1534567890, false));
         books.add(new Book(1634567890, false));
         books.add(new Book(1734567890, false));
-
-
-
         bookArrayAdapter.notifyDataSetChanged();
     }
 

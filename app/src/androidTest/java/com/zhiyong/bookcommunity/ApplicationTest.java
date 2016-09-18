@@ -1,4 +1,4 @@
-package com.zhiyong.findbooks;
+package com.zhiyong.bookcommunity;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

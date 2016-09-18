@@ -1,4 +1,4 @@
-package com.zhiyong.findbooks.adapters;
+package com.zhiyong.bookcommunity.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,8 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.zhiyong.findbooks.R;
-import com.zhiyong.findbooks.models.Book;
+import com.zhiyong.bookcommunity.R;
+import com.zhiyong.bookcommunity.models.Book;
 
 import java.util.List;
 
